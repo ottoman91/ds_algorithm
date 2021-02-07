@@ -10,3 +10,6 @@ for binary tree, O is lg(n + 1)
 
 in place algorithms usually have O(1) space cost.
 But in-place algorithms are risky.
+
+
+ammortized cost of appending to dynamic arrays is O(1). This is because the time cost of each special O(n) "doubling append" doubles each time, but the number of O(1) appends you get until the next doubling also doubles.
